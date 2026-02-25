@@ -27,7 +27,7 @@ with st.form("input_form"):
         smoker = st.selectbox("Smoker", options= le_smoker.classes_)
 
 
-    submitted = st.form_submit_button("Predict Payment")
+    submitted = st.form_submit_button("Generate Quote")
 
 if submitted:
     input_data = pd.DataFrame({
@@ -52,3 +52,4 @@ if submitted:
     prediction = model.predict(input_data)[0]
 
     st.success(f"**Estimated Insurance Payment Amount:** ${prediction:,.2f}")
+
