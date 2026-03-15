@@ -1,2 +1,2 @@
 # Health-Insurance_App
-Predicts Health Insurance Premiums
+Predicts Health Insurance Claims
